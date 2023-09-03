@@ -1,0 +1,67 @@
+/* Form.css */
+
+/* Style for the entire form container */
+
+.profile-form-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+.profile-form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  /* Style for the welcome heading */
+  .welcome-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Style for form groups */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Style for form labels */
+  .form-label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  /* Style for form inputs */
+  .form-input {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  /* Style for the form button */
+  .form-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Style for the form button on hover */
+  .form-button:hover {
+    background-color: #357ae8;
+  }
+  

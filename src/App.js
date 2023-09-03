@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import {auth} from './firebaseConfig/firebase';
-import Auth from './components/Auth';
-import Profile from './components/Profile';
-import Welcome from './components/Welcome';
+import React, { useState, useEffect } from "react";
+import { auth } from "./firebaseConfig/firebase";
+import Auth from "./components/Auth/Auth";
+import Profile from "./components/Profile/Profile";
+import DeleteAccount from "./components/Delete/DeleteAccount";
+import './App.css'
+// import firestoreTest from './firestoreTest';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -24,13 +26,13 @@ function App() {
   return (
     <div className="App">
       {user ? (
-        <Profile user={user} />
+        <>
+          <DeleteAccount user={user} />
+          <Profile user={user} />
+        </>
       ) : (
         <Auth />
       )}
-      {user && user.displayName ? (
-        <Welcome user={user} />
-      ) : null}
     </div>
   );
 }

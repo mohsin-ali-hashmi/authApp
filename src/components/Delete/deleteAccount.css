@@ -1,0 +1,39 @@
+/* DeleteAccount.css */
+
+/* Style for the container that will position the button */
+.delete-button-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    animation: fadeIn 0.5s ease-in-out 1s forwards;
+  }
+  
+  /* Style for the delete button */
+  .delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for the delete button */
+  .delete-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+  }
+  
+  /* Keyframes for fadeIn animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
