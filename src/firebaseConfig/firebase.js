@@ -7,13 +7,15 @@ import 'firebase/firestore';
 
 const firebaseConfig = {
 
-  apiKey: "AIzaSyBgQgmFxwb2fp7wCGPvKH-rpMoQ-FlDdhE",
-  authDomain: "authapp-9f718.firebaseapp.com",
-  projectId: "authapp-9f718",
-  storageBucket: "authapp-9f718.appspot.com",
-  messagingSenderId: "188420677143",
-  appId: "1:188420677143:web:36830aa1bb8b2b0ef74652",
-  measurementId: "G-G2TEB62PFX"
+    apiKey: 'YOUR_API_KEY',
+    authDomain: 'YOUR_AUTH_DOMAIN',
+    projectId: 'YOUR_PROJECT_ID',
+    storageBucket: 'YOUR_STORAGE_BUCKET',
+    messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
+    appId: 'YOUR_APP_ID',
+    measurementId: 'YOUR_MEASUREMENT_ID'
+
+
 };
 
 const app = initializeApp(firebaseConfig);
